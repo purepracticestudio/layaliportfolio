@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+
+/* CSS Document */
+body, html {
+height: 100%;
+margin: 0;
+}
+* {box-sizing: border-box;
+}
+
+/* ---reset.css--- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+		font-family:"Open Sans",'微軟正黑體', "Segoe UI" , "Heiti TC";
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	-webkit-text-size-abjust:none; /*iphon 旋轉字大小不變*/
+	list-style:none;padding:0;margin:0;
+
+}
+body {
+line-height: 1;
+letter-spacing:2px;
+background:#FFF;
+color: #626262; 
+}
+
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{  cursor: pointer;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+p{ font-size:1em; 
+    line-height: 1.6em;
+}
+
+.blue{color: #638EB9;}
+.point{ font-size: 24px;}
+h2{ font-size: 4em;  }
+h3{ font-size: 1.5em;  } 
+h5{ font-size: 1.1em;   }
+h3,h5,h6,h4,h2{font-weight: initial;} 
+
+/*GOTOTOP*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 998;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #707070;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius:50px;
+}
+
+#myBtn:hover {
+  background-color:#EDE4DA;
+  color:  #707070;
+  transition: 0.5s;
+}
+
+/*----nav------*/
+
+.navigation {
+  position:fixed;
+  width: 100%;
+  height: 70px;
+  background: #fafafa;
+  z-index: 999;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #fafafa;
+  color: #707070;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #92A6BA;
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background:  #92A6BA;
+  height: 70px;
+  width: 70px;
+}
+
+.logo {
+  width:40px;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 15px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.logo img{ width: 100%;}
+@media only screen and (max-width: 766px) {
+  .row .logo {
+    float: none; width:35px;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
+/*----- 版型這邊 ---------*/
+.WRAPPER{ width: 100%; overflow: hidden;}
+.webdesign{ width: 100%; height: 300px; margin: 0 auto; background-color: #fafafa;}
+
+.title{ position: relative; width: 800px; height: auto; margin: -120px auto; background-color:#92A6BA;}
+.title_box{ padding: 20px 30px 50px; color:#FFF;}
+.title_box h2{ padding: 20px 0;}
+.smail{ font-size: 16px; }
+
+.webproject{ margin-top: 120px;}
+.webproject .group{ width: 1200px; margin: 0 auto; padding: 50px 0;}
+.webproject .item{ display: inline-block;vertical-align : top ;/*同高*/ width: 380px;  padding: 10px;/* border:1px solid #92A6BA ; */}
+.webproject .photo{ position: relative;width: 100%;}
+.webproject .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.webproject  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 85%;
+  width: 90%;
+  opacity: 0;
+  margin: 15px auto;
+  transition: .5s ease;
+  background-color: #EDE4DA;
+  /*cursor: pointer;*/
+}
+
+.webproject .photo:hover .overlay {
+  opacity: 1;
+}
+/*
+.othertlink {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}*/
+
+.othertlink{  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  
+
+
+
+.depiction{ width: 100%; padding: 20px 10px; line-height: 24px; }
+.depiction .sort{ font-size: 14px; padding-bottom: 20px;}
+.depiction h5{padding-bottom: 5px;font-size:20px;}
+
+@media only screen and (max-width: 1180px) {
+  .webproject .group{ width: 100%; margin: 0 auto; padding: 50px 10px;}
+  .webproject .item{ display: inline-block;vertical-align : top ;/*同高*/ width: 32.5%;  padding: 10px;/* border:1px solid #92A6BA ; */}
+}
+
+@media only screen and (max-width: 860px) {
+  .webdesign{height: 300px;}
+  .title{ width: 90%; }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .webproject .item{ display: block;width: 100%;  }
+}
+      a{color:  #92A6BA; text-decoration: none;}
+      a:hover{ color:#626262;}
+      a:active{ color:#92A6BA;}
+
+
+/*----- 版型這邊 ---------*/
+/*---button--------------------------------------*/
+
+ .btn {
+    border: 1px solid #626262;
+    background-color: white;
+    color: #626262;
+    padding: 10px 38px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* 626262 */
+  .success {
+    border: 1px solid #626262;
+    color:#626262;
+  }
+  
+  .success:hover {
+    border-color: #92A6BA;
+    background-color: #92A6BA;
+    color: #FFF;
+    transition : 0.5s;
+  }
+  @media screen and (max-width: 1350px) {
+    .success { margin-top: 10px;}
+  }
+  
+
+
+/*-------MORE--------*/ 
+.more_behance{width: 100%; text-align: center; background-color: #92A6BA; padding-bottom: 50px; }
+.more_behance  .success{ width: 200px; height: 45px; margin: 0 auto; }
+.more_behance   .success:hover {
+  border-color: #FFF;
+  background-color: #92A6BA;
+  color: #FFF;
+  transition : 0.5s;
+}
+
+
+  
+  /* 底部LINES */
+.links{ width: 100%; height: auto; margin: 0px auto; text-align: center; padding-bottom: 20px; }
+.links img{ width: 45px; overflow: hidden;}
+.links a:hover{ opacity: 0.5;   transition : 0.7s;}
+@media screen and (max-width: 999px) {
+
+}
+
+
+/*---------copye------------*/
+  footer{ width: 100%; height: auto; padding: 20px 0;background-color: #EDE4DA;}
+  footer p{ font-size: 15px; text-align: center;}
+ 
