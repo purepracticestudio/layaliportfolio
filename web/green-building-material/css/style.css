@@ -1,0 +1,1195 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+}
+
+
+
+
+
+/* ---reset.css--- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family:'Century Gothic','Noto Sans TC',serif, Arial , Heiti TC, sans-serif ;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	-webkit-text-size-abjust:none; /*iphon 旋轉字大小不變*/
+
+}
+body {
+line-height: 1;
+letter-spacing:2px;
+background:#F3F0EB;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+
+
+/* ---reset.css--- */
+/*-------*/
+.point{ color:#228fff;}
+#WRAPPER{ width:100%; overflow:hidden;  }
+
+/*-------*/
+
+/*----heard-nav-------------------------------------------------------*/
+.top-nav{ display:block;position:fixed; width:100%;height:60px;background:rgba(255,255,255,0.9); z-index:9999;}
+.top {margin:0px auto;width:1020px;} /* RWD */
+.top-left {margin:0.8em 0em 0 1em;float:left;}
+.top-right { display:block;margin:1em 1em 0 0;color:#343434;font-size:18px;float:right;    }
+.top-right a {color:#333; text-decoration:none;margin-left:25px; padding:0 5px 5px 0px; border-bottom:0px solid; }	
+.top-right a:hover {color:#228fff; border-bottom:3px solid #228fff;border-bottom-width :100%; transition:  all .20s ease-out;}
+
+
+
+/*----heard-nav-------------------------------------------------------*/
+
+/*----nav mobile------------------------------------------------*/
+
+#mast{ display:none;}  
+/*----nav mobile------------------------------------------------*/
+
+
+/*--PC float-------------------------------------------------------*/
+/*--PC float------------------------------------------*/
+a.back-to-top {opacity: 1; display: none;width: 10px; height:10px;padding:28px;height: 35px;text-indent: -9999px;position: fixed;z-index: 10000;right: 0px;top: 415px;background:#F5B983 url(../images/up-arrow.png) no-repeat center 43%;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
+background-size:45px ;border-radius: 5px 0 0 5px;}
+
+a:hover.back-to-top {background-color: #F3B3A6;}
+
+
+#mySidenav a { display:block;position: fixed;right: -245px;transition: 0.3s;padding: 10px ;width: 300px;text-align:left;text-decoration: none;font-size: 20px;color: white;border-radius: 5px 0 0 5px;}
+
+#mySidenav a:hover {right: 0;}
+#floatform img{ width:45px;vertical-align:middle;}
+#floatform{top: 220px;background-color: #B57269;z-index:10000;}
+#floatPhone img{ width:45px;vertical-align:middle;}
+#floatPhone {top: 285px;background-color: #3A3A3A;z-index:10000;}
+#floatrFB img{ width:45px;vertical-align:middle;}
+#floatrFB {top: 350px;background-color: #425f9c;z-index:10000;}
+
+/*--PC float-------------------------------------------------------*/
+
+
+
+
+/*---KV------------------------------------------------------------*/
+.bg {
+  /* The image used */
+  background-image:url(../images/KVBG_180A2881.jpg);
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/*地區限定*/
+
+.KVremake{display:block;position: absolute;top: 7%;  left: 32%; z-index:99;  }
+.KVremake-mobile768{display:none;}
+.KVremake-mobile{display:none;}
+/*KV title*/
+
+.caption {
+  position: absolute;
+  left: 0%;
+  top: 15%;
+  width: 100%;
+  text-align:center;
+  color: #000;
+  line-height: 65px; /*RWD*/
+}
+
+.caption span.border {
+	display:block;
+  background-color:rgba(255,255,255,0.9);
+  color: #333333;
+  width:650px;
+  margin:0 auto;
+  padding: 30px 10px 10px;
+  font-size:100px; /*RWD改字體大小*/
+  letter-spacing:15px;
+}
+.smail{ display:block;  width:650px;
+  padding: 5px 10px 10px;  font-size:45px; color: #333333; margin:-65px auto;
+ letter-spacing: 12px; background-color:rgba(255,255,255,0.9);} /*RWD改字體大小*/
+
+.c-scrolldown {
+  width: 1px;
+  height: 90px;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.c-scrolldown .c-line {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
+
+
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -90px;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 90px;
+  }
+}
+
+.scroll-down{ position: absolute;
+  width: 100%;
+  bottom: 30px;
+  color:#FFF;
+  text-decoration:none;
+   text-align:center;}
+ .scroll-down:hover{ color:#F3F0EB; }  
+ 
+ /*KV小字*/
+
+.KV-note{ width:1200px; padding:10px; margin:0 auto; text-align:center;} /*R*/
+.kv-note-p { letter-spacing:2px;}
+.KV-note-point{padding:8px 20px;  background:#e2d6d2; }
+.KV-icon-color { color:#FFF;}
+/*---KV------------------------------------------------------------*/
+
+
+/*---Content1-----小心裝修汙染------------------------------------------------------*/
+#CONTENT-1,#CONTENT-2,#CONTENT-3,  #CONTENT-6 { padding-top:80px;}
+#CONTENT-5 { padding-top:20px;}
+.GBM-iteam1{ width:100%; height:550px; margin:0px auto;}
+.item1-img{width:1200px;padding:0px; margin:0 auto;  }
+.bgimg { position:relative; z-index:11; width:1020px;margin:0px auto; text-align:center;  }
+.bgimg p{ padding-top:10px;}
+.bgimg img{width:100%; height:auto;}
+.bgimg-OC{ display:block;}
+.bgimg-MOC{display:none;}
+.bgcolorblock{  position:relative;z-index:10;margin-top:-350px; width:100%; height:350px;  background:#e3e1e4;}
+
+.item-title{position:absolute;margin-top:280px; margin-left:360px;z-index:13; width:500px; height:70px; background:rgba(0,0,0,0.8); }
+.item-title h2{ padding:0px; margin:0 auto; text-align:center; color:#FFF; font-size:45px; line-height:55px; font-weight:bold;  }
+/*---dots--*/
+
+
+.pointA{ position:absolute; z-index:155; margin-top:45px;margin-left:650px; } /*天花板--位置修改*/
+.pointB{ position:absolute; z-index:155; margin-top:450px;margin-left:250px; } /*地板--位置修改*/
+.pointC{ position:absolute; z-index:155; margin-top:100px;margin-left:440px; } /*牆--位置修改*/
+.pointD{ position:absolute; z-index:155; margin-top:300px;margin-left:1000px; } /*櫥櫃--位置修改*/
+/*modal*/
+.dot-box{ margin:0 auto; padding:5px; text-align:center; }
+.dot-box h4{ height:20px; font-size:24px; padding:5px; }
+.dot-box p{ width:80%; padding:10px;  margin:0 auto;}
+.green-line-dots{width:50%; padding:5px 0 ; border-bottom:5px solid #a6b86b; margin:0 auto;}
+/*pulse*/
+.pulse-button {
+  display: block;
+  width: 20px;/*原點尺寸*/
+  height: 20px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #228fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0  30px rgba(90, 153, 212, 0); /*改影子尺寸*/
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+
+/*-dots---*/
+
+	
+/* ****************
+ * Modal dots window
+ * *************** */
+.modal-dots {
+  opacity:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  color: #333;
+  z-index: 905010;
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear;
+  -webkit-transform: translate(0,100%);
+  -ms-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+/* Modal content */
+.modal-dots-inner {
+  position:relative;
+  width:400px;
+  height:300px;
+  margin:160px auto;
+  padding:20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.10);
+  border-radius:15px;
+  background-color:rgba(255,255,255,1);
+  z-index:10;
+}
+
+
+/* ****************
+ * Modal-dots close button
+ * *************** */
+.modal-dots .close-dots {
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+height:100%;/*RWD*/
+  overflow:hidden;
+  background-color: rgba(0,0,0,0.8);
+  z-index:1;
+}
+.modal-dots .close-dots span {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,1);
+  cursor:pointer;
+}
+.modal-dots .close-dots span {
+  text-indent: -9999px;
+}
+.modal-dots .close-dots span:before,
+.modal-dots .close-dots span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  border: 1px solid #228fff;
+  height: 30px;
+}
+.modal-dots .close-dots span:before {
+  left: 19px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.modal-dots .close-dots span:after {
+  right: 19px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ****************
+
+ * Append modal(target id)
+ * *************** */
+#modal-dots-one:target,
+#modal-dots-two:target,
+#modal-dots-three:target, 
+#modal-dots-fore:target{
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+
+
+/*---Content1-----小心裝修汙染------------------------------------------------------*/
+.none{ clear:both;}
+/*---Content2-----養好宅關鍵------------------------------------------------------*/
+.GBM-item2{ width:100%; height:600px; margin:40px auto; }
+.GBM-item2 h2{ font-size:24px; text-align:center;}
+.title{color:#228fff; font-size:36px;}
+.title-p{font-size:16px; text-align:center; margin:0 auto;}
+.title-icon-color{ padding-top:15px; font-size:14px; color:#e2d6d2; text-align:center;}
+h3{ width:750px; font-size:30px; text-align:center; margin:40px auto;}
+.title-point{color:#228fff; font-weight:600;}
+/*--兩段區域----*/
+.item-2-group{ width:1200px; margin:20px auto;}
+.item-2-img{ float:left; margin-right:25px; width:500px; height:280px; overflow:hidden; box-shadow:3px 3px 12px #e3e1e4;}
+.item-2-img img{width:100%;}
+/**/
+.green-line{width:100%; padding:20px 0 0 0; border-bottom:1px solid #a6b86b; margin:0 auto;}
+/*格子*/
+.item-2-group ul{padding-top:0px; }
+.item-2-group li{ float:left; width:550px; padding-top:20px; }
+.item-2-group li img{float:left; padding:10px; width:120px; height:120px;}
+.item-2-group li h4{ font-size:24px; font-weight:600;}
+.item-2-group li p{ font-size:14px; text-align:justify; }
+.eglish{font-family: Arial; font-weight:700;}
+.item-2-group a{color:#228fff; text-decoration:underline;}
+/*---Content2----養好宅關鍵------------------------------------------------------*/
+
+/*---Content3-----改好宅推薦------------------------------------------------------*/
+.GBM-item3{ width:100%; height:auto; margin:0 auto; }
+.GBM-item3 h2{ font-size:24px; text-align:center; }
+
+/*A*/
+
+.GBM-p58{  width:100%;  margin:20px auto;background-color:#e3e1e4;   }
+.GBM-p58 ul{ padding:15px;width:100%;  height:300px; overflow:hidden; }
+.group-03{ width:40%; float:left;text-align:right;font-size:45px; line-height:45px; padding:30px; }
+.projectnumber{ font-size:80px; color:#FFF;}
+.projectsmail{font-size:16px;line-height:26px; }
+.projectimg{float:right; width:60%; height:260px; margin-top:20px;  overflow:hidden;  }
+.projectimg img{ box-shadow:3px 3px 12px #e3e1e4; }
+.moneyblue{ color:#228fff;font-size:80px;}
+.moneysmall{font-size:16px;}
+
+/*B*/
+
+.GBM-p108{  width:100%;  margin:20px auto;background-color:#e2d6d2;   box-shadow:3px 3px 12px #e3e1e4; }
+.GBM-p108 ul{ padding:15px;width:100%;  height:300px; overflow:hidden; }
+/*收放*/
+.accordion{background:#F3F0EB; width:100%; margin:0 auto;}
+.accordion .set {
+  margin-bottom: 5px;
+  
+}
+.accordion .set > a {
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 15px 30px 15px 30px;
+  position: relative;
+
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+  cursor: pointer;
+  text-align:center;
+  background-color: rgba(34, 143, 255, 1);  
+}
+.accordion a{ margin:0 auto;  width:290px; }
+.accordion .set > a:focus {
+  outline: 0;
+}
+.accordion .set > a:hover {
+  background-color: rgba(34, 143, 255, 0.7); 
+}
+.accordion .set > a.active {
+  background-color: rgba(34, 143, 255, 1);
+  color: #fff;
+}
+.accordion .set > a i {
+  color: #666;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.accordion .set > a.active i {
+  color: #fff;
+}
+.accordion .content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 30px solid rgba(227, 225, 228, 1);
+  display: none;
+}
+
+.accordion .content-B {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 30px solid rgba(226, 214, 210, 1);
+  display: none;
+}
+.accordion .content p {
+  color: dimgray;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+	/*---main-A Project----------------------------------------------------------*/
+.contentA-text{ font-size:45px; line-height:55px; }
+.contentA-photo{
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom:40px;box-shadow:3px 3px 12px #e3e1e4;
+}
+
+.contentA-photo img {vertical-align: middle;}
+
+.contentA-photo .contentA-font{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #FFF;
+  width: 100%;
+  padding: 10px;
+}
+.contentA-font h5{ padding:5px 0;  font-size:24px; line-height:14px;}
+.Project-font{ padding:5px 0; line-height:24px;}
+
+.contentA-main{ max-width:650px; height:220px;  text-align:center;  padding-top:20px; border: 5px solid #e3e1e4; background-color:#FFF;box-shadow:3px 3px 12px #e3e1e4; }
+.Project-trait{ width:620px;margin:10px auto; padding:0 40px;}
+.Project-trait-icon{  width:25px; height:25px;vertical-align:middle; }
+.Project-trait li{ padding: 0 0 5px; width:100%;  text-align:left; }
+.PT-text{ font-size:24px;}
+
+/*專案內容*/
+.contentA-progect{ margin:20px auto; max-width:500px;height:200px; }
+.contentA-progect h2{ text-align:center; }
+.content-A-box{ float:left;max-width:250px; height:150px; margin:0 auto; padding:10px 0; }
+.Project-trait-icon2{ position:relative; top:5px;width:25px; height:25px;}
+/*基本裝修*/
+.basicdecoration{ width:1020px; margin:40px auto; height:600px;}
+.A-box{ width:800px;height:50px; padding:10px; text-align:center; font-size:24px;   margin:0 auto; background-color:#e2d6d2;}
+.DC-group{  width:800px;margin:20px auto; }
+
+.DC-BOX{ float:left; width:260px; margin: 0 3px 0 ; padding:10px; border:1px solid rgba(227, 225, 228, 1); background:#FFF;box-shadow:3px 3px 12px #e3e1e4;}
+.Afont-list{ margin-top:10px; width:40%; padding:6px ; color:#FFF; font-size:18px; background-color:#228fff;}
+.A-detail{ line-height:26px;}
+.A-point{ padding:5px;}
+.A-point img{ vertical-align:middle;}
+/*加值*/
+.box2{height:280px;}
+.box-color-2{background-color:#228fff;color:#FFF;}
+.DC-noborder{ padding:0px;}
+.DC-imgzoom { width:258px; height:auto;overflow:hidden;}
+.DC-imgzoom img{ transition: transform .2s; /* Animation */ }
+.DC-imgzoom img:hover {transform: scale(1.5);}
+.DC-img-text{ position:relative; margin-top:-46px; padding:10px; height:46px; background-color:rgba(0, 0, 0, 0.8); color:#FFF; font-size:24px; text-align:center; }
+.DC-img-font{ height:60px; padding-top:25px; text-align:center;}
+.DC-group-remake{ width:1020px; padding-bottom:20px; margin:0 auto; text-align:center;}
+/*其他*/
+.box3{height:250px;}
+.box-color-3{background-color:#F2F2F2; }
+.DOS-box3{  width:800px;height:175px;margin:20px auto; border:1px solid rgba(227, 225, 228, 1); background:#FFF;box-shadow:3px 3px 12px #e3e1e4;}
+.DOX-img{ float:left; width:260px; height:200px; overflow:hidden; margin-right:10px;}
+.DOX-text{  padding-top:40px;  line-height:28px;}
+/*價格*/
+.box4{height:300px;}
+.final-money{width:600px;margin:20px auto;}
+.DM-text{ float:left; margin-top:30px; margin-right:20px; text-align:right; }
+.DM-ptext{ font-size:18px;}
+.DM-bigtext{ font-size:24px;}
+.DM-momey{ margin-left:20px;}
+.DM-button{ position:relative; margin-left:40px; width:300px; margin:0 auto;}
+.DM-button-back{ width:62px; height:62px; margin:60px auto; }
+/*---main-A Project----------------------------------------------------------*/
+	
+/*---main-B Project----------------------------------------------------------*/
+	.PThight{height:400px;}
+	.boxB-0{ height:400px;}
+	.box-B1{ height:250px;}
+	/*廚房*/
+	.AL-box{ width:100px;}
+	.KB-text{  margin-bottom:20px; background-color:#000; padding:10px;   text-align: center; color: #fff;  }
+	
+	.KB-text01{font-size:24px;}
+	.KB-smail-text{ padding:5px; font-size:14px;}
+	.KB-smail-text-point{ padding:10px;font-size:14px; vertical-align:middle;}
+	.KB-smail-text-point img{ vertical-align:middle;}
+	.goods-box{ float:left; width:180px; padding:2px; }
+	.goods-list{ text-align:center;line-height:24px;}
+	.MB-hight-1{ height:740px;/*RWD*/}
+	.MB-hight-2{ height:550px;}
+	.MB-hight-3{ height:300px;}
+
+
+	/*modal*/
+	
+/* ****************
+ * Modal window
+ * *************** */
+.modal {
+  opacity:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  overflow-y: auto;
+  color: #333;
+  z-index: 905010;
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear;
+  -webkit-transform: translate(0,100%);
+  -ms-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+/* Modal content */
+.modal-inner {
+  position:relative;
+  width:400px;
+  margin:80px auto;
+  padding:20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.10);
+  border-radius:15px;
+  background-color:rgba(255,255,255,1);
+  z-index:10;
+}
+
+
+/* ****************
+ * Modal close button
+ * *************** */
+.modal .close {
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+height:1400px;/*RWD*/
+  overflow:hidden;
+  background-color: rgba(0,0,0,0.9);
+  z-index:1;
+}
+.modal .close span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,1);
+  cursor:pointer;
+}
+.modal .close span {
+  text-indent: -9999px;
+}
+.modal .close span:before,
+.modal .close span:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  border: 1px solid #228fff;
+  height: 30px;
+}
+.modal .close span:before {
+  left: 19px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.modal .close span:after {
+  right: 19px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* ****************
+ * Append modal(target id)
+ * *************** */
+#modal-one:target,
+#modal-two:target,
+#modal-three:target {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+	/*---main-B Project----------------------------------------------------------*/
+
+/*---Content3------改好宅推薦-----------------------------------------------------*/
+
+
+/*---Content4---專案流程--------------------------------------------------------*/
+#GBM-item4{ display:block; width:100%; height:800px; margin:0 auto; }
+#GBM-item4 h2{ font-size:24px; text-align:center;}
+.contentA-main{ width:1200px; margin:0 auto;}
+.item4-group{ width:1000px; margin:0 auto;}
+.item4-group ul{ float:left; width:325px; height:315px; padding:25px; margin:0 auto; text-align:center;}
+.smailtext{ padding:5px; font-size:14px;}
+.item4-icon{ margin:0 auto;height: 135px; width: 135px;border-radius: 50%; background-color:#e2d6d2;box-shadow:3px 3px 12px #e3e1e4;}
+.item4-icon img{ position:relative; top:5px;width:120px; height:120px;margin: 0 auto;}
+.item4-text{ padding:5px; font-size:24px; }
+
+/*---Content4---專案流程--------------------------------------------------------*/
+
+
+/*---Content5----QA-------------------------------------------------------*/
+
+.GBM-item5{ width:100%; height:900px; margin:0 auto; background-color:#e3e1e4; padding-bottom:40px; }
+.GBM-item5 h2{ font-size:24px; text-align:center; padding-top:40px;}
+.accordionQA{ position:relative;   width:1000px;; height:auto; margin:40px auto; z-index:56;}
+.accordionQA h4{ padding:15px; font-size:20px; background-color:#228fff; color:#FFF;  }
+.accordionQA p{ padding:15px; background-color:#FFF; z-index:5588855;}
+
+#triangle-down { width: 0; margin-top:-10px; margin-left:5%;height: 0;border-left: 10px solid  transparent; border-right: 10px solid  transparent;border-top: 10px solid #228fff; z-index:55;} 
+.QABG{ display:block; width:400px; position:relative;  top:-820px;z-index:5;}
+.QABG img{ width:100%;}
+/*---Content5----QA-------------------------------------------------------*/
+
+
+
+
+/*---Content6----住宅好準備-------------------------------------------------------*/
+.GBM-item6{ width:100%; height:700px; margin:0px auto; }
+.GBM-item6 h2{ font-size:24px; text-align:center;}
+.item6-group{ width:1020px; margin:0 auto;}
+.item6-group ul{ float:left; width:500px; padding:20px; margin:0 auto; }
+.item6-text{ font-size:30px;  }
+.item6-img, .item6-font{ width:100%;}
+.item6-img{ height:auto;overflow:hidden;}
+.item6-img img{ transition: transform .2s; /* Animation */ }
+.item6-img img:hover {transform: scale(1.5);}
+.button {
+ font-family:'Century Gothic','Noto Sans TC',serif;
+  background-color: #228fff; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3 {padding: 14px 40px;}
+.button:hover{ background-color: #e2d6d2; color:#333; }
+
+
+/*---Content6----住宅好準備-------------------------------------------------------*/
+/*FORM-----------------------------------------------*/
+
+
+/*----FROM 表單-------------------------------------------------*/
+#FORM{ clear:both; width:100%; height:auto; margin:0 auto; padding:10px 0 20px 0; background-color:#EBEBEB;; overflow:hidden;}
+#FORM h3{text-align:center; font-size:36px; line-height:46px; color:#000; padding:0px 0 0px;}
+
+.message { text-align: center;width:80%; margin: auto;}
+.message label { font-size: 18px;}
+
+@media screen and (min-width: 768px) { .message .m_title { font-size: 40px; }}
+.message .title-p  {margin-top: 20px; margin-bottom: 30px; line-height:26px;} /*副標 依照行銷頁更換*/
+
+@media screen and (min-width: 768px) { .message .m_subtitle { font-size: 22px; }}
+
+.message .m_group { font-size: 0; text-align: left; margin: auto;} /*整個表單範圍*/
+
+@media screen and (min-width: 768px) {.message .m_group { width:80%;  margin: auto; margin-left:20%;} }
+
+.message .m_group > div { margin-bottom: 25px;}
+.message .m_group .area_box { margin-top: 10px; margin-bottom: 10px;}
+.area_box select{ height:45px; border: 1px solid #a7a7a7; font-size: 16px;}/*填框尺寸*/
+.message .m_group input[type='text'] { width: 100%; margin-top: 7px; }
+.message .m_group .name label, .message .m_group .phone label { display: block;}
+
+@media screen and (min-width: 768px) {
+	.message .m_group .name, .message .m_group .phone { width: 80%;}} /*名字手機 填表*/
+.message .m_group .name input, .message .m_group .phone input {height: 45px; border: 1px solid #a7a7a7; font-size: 16px;}/*填框尺寸*/
+
+@media screen and (min-width: 768px) {.message .m_group .name {margin-right: 6%;}}
+
+.message .m_group .county, .message .m_group .region { display: inline-block; width:40%;  } /*區域 填表*/
+.message .m_group .region label {margin-right: 6px;}
+.privacy{ font-size:28px;} 
+.message .m_group .privacy span {color: #228fff;}
+.message .m_group .privacy a { text-decoration: none; color: #228fff; }
+.message .m_group .submit {-webkit-box-sizing: border-box;box-sizing: border-box; text-align: center; margin: auto; font-size: 24px;}
+
+@media screen and (min-width: 768px) {.message .m_group .submit { width: 250px; }}
+.submit_box { width: 100%; text-align: center; margin-left:-10%;}
+
+@media screen and (max-width: 320px) {.city-size { width:85px; }}
+	
+/*booking button*/ 
+.butbooking{ width:180px; margin:40px auto; }
+.btn-btn{ border: none;color:#FFF;  padding: 10px 25px;font-size: 24px; 
+  cursor: pointer; margin:0 auto; font-family:'Century Gothic', "微軟正黑體";}
+.booking{background-color: #228fff;  /*border-radius: 50px;  box-shadow:2px 2px 10px #666d6d;*/}
+.booking:hover { background-color: #e2d6d2; color:#333;}
+
+
+
+
+/*FORM------------------------------------------------*/
+
+/*--- footer-------------------------------------------------------------------------------*/
+
+.copyright{ padding:20px 0;text-align:center; color:#666; font-size:16px; padding-bottom:20px;  background-color:#FFF;}
+.footer{ display:none;}
+/*--- footer-------------------------------------------------------------------------------*/
+
+
+
+/*---mobile footer----*/
+.footer{ display:none;}
+/*---mobile footer----*/
+
+@media screen and (max-width:1890px){.KVremake{ left:31%;}}
+@media screen and (max-width:1800px){.KVremake{ left:30%;}}
+@media screen and (max-width:1700px){.KVremake{ left:27%;}}
+@media screen and (max-width:1680px){.KVremake{ left:28%;}}
+@media screen and (max-width:1500px){.KVremake{ left:26%;}}
+@media screen and (max-width:1440px){.KVremake{ left:25%;}}
+@media screen and (max-width:1366px){
+/*地區限定*/
+.KVremake{left: 24%;}
+}
+
+@media screen  and (max-width:1280px) {.KVremake{ left: 22.55%;}}
+@media screen and  (max-width:1180px) {.KVremake{ left: 20%; }}
+@media screen and  (max-width:1090px) {.KVremake{ left: 18%;  }}
+@media screen and (max-width:1050px){.KVremake{ left: 17%; }}
+
+@media screen and (max-width:1024px){
+	#WRAPPER{ width:100%; overflow:hidden;  }
+
+/*======= header ===============================*/
+.top-nav{ display:none;}
+#mySidenav a { display:none;}
+/*----nav mobile------------------------------------------------*/
+#mast{ display:block; position:inherit; width:100%; height:65px ; z-index:999999999999;   overflow:hidden;background-color:#FFF;}
+#logo{ display:block;z-index:999999999999999;}
+.top_l {margin:1em 0em 0 1em;float:left;z-index:999999999999999;}
+.mobile-header-nav {
+ background-color: #228fff;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index:9999999999999; 
+  
+}
+.mobile-header-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-header-nav li a {
+  color:#FFF;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  font-size:18px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-header-nav li a:hover {
+  background-color: rgba(226,214,210,1);
+  color:#000;
+}
+
+
+.hamburger-menu {
+	margin-left:85%;
+  display: inline-block;
+  height: 60px;
+  margin-top:-32px;
+  padding: 7px 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration:none;
+}
+.hamburger-menu p{
+  font-size:14px; color:#FFF;}
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+.hamburger-menu .menu-item {
+  background-color:  #228fff;
+  display: block;
+  height: 5px;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+
+}
+.hamburger-menu.open .menu-item {
+  margin: 0 0 8px;
+}
+.open .menu-item:first-child {
+ background-color: #e2d6d2;
+  display: block;
+  height: 5px;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.open .menu-item:nth-child(2) {
+  background-color: #e2d6d2;
+  display: block;
+  height: 5px;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+.open .menu-item:nth-child(3) {
+ background-color: #e2d6d2;
+  display: block;
+  height: 5px;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+/*----nav mobile------------------------------------------------*/
+
+
+/*KV--------------------------------------*/
+
+.KVremake{ display:none;  }.smail{ display:none; }
+.KVremake-mobile{display: block; padding:0 10px; z-index:9999; }
+.caption { top: 6%;}
+.caption span.border { display:none;}
+
+
+.c-scrolldown { bottom: 130px;}
+.scroll-down{  bottom: 100px;}
+ .KV-note{ width:100%; padding:10px; line-height:28px;} /*R*/
+ /*KV------------------------------------*/
+ /*--Content1-----小心裝修汙染------------------*/
+#CONTENT-2,#CONTENT-3,#CONTENT-6 { padding-top:20px;}
+#CONTENT-1{padding-top:80px;}
+.GBM-iteam1{ width:100%; height:auto;}
+.item1-img{width:100%;padding:5px; margin:0 auto;  }
+.bgimg { position:relative; z-index:11; width:100%; height:auto;margin:0px auto; text-align:center;  background:#e3e1e4;  }
+.bgimg p{ padding:10px 0;}
+.bgimg img{width:100%;}
+
+
+.item-title{margin:-68px auto; width:99%;  height:auto; padding:10px; }
+.item-title h2{ padding:0px; margin:0 auto; text-align:center; color:#FFF; font-size:2em; line-height:1.5em; font-weight:bold;  }
+/*---dots--*/
+.bgcolorblock{ display:none; }
+.pointA{  margin-top:3%;margin-left:28%; } /*天花板--位置修改*/
+.pointB{  margin-top:40%;margin-left:30%; } /*地板--位置修改*/
+.pointC{  margin-top:10%;margin-left:47%; } /*牆--位置修改*/
+.pointD{  margin-top:25%;margin-left:80%; } /*櫥櫃--位置修改*/
+ /*pulse*/
+.pulse-button {width: 18px;/*原點尺寸*/ height:18px;}
+ 
+ 
+ /*--Content2-----養好宅關鍵----------------------*/
+
+.GBM-item2{ width:100%; height:auto; margin:0px auto;    }
+.title-icon-color{ padding-top:15px;}
+h3{ width:100%; padding:0 10px; font-size:30px; line-height:40px; text-align:center; margin:40px auto;}
+
+/*--兩段區域----*/
+
+.item-2-group{ width:100%; margin:20px auto; height:auto; padding-bottom:0px;}
+.item-2-img{ float:none; margin:0 auto; width:100%; height:auto; overflow:hidden; box-shadow:3px 3px 12px #e3e1e4;}
+.item-2-img img{width:100%;}
+/**/
+.green-line{width:100%; padding:20px 0 0 0; border-bottom:1px solid #a6b86b; margin:0 auto;}
+/*格子*/
+.item-2-group ul{padding:0px 10px ; margin:0 auto; }
+.item-2-group li{ float:left; width:100%; }
+
+/*--Content3-----改好宅推薦---------------------*/
+
+.GBM-item3{ width:100%; height:auto; margin:0px auto; padding:5px; }
+ 
+/*A*/
+
+.GBM-p58{  width:100%;  margin:0px auto;background-color:#e3e1e4;   }
+.GBM-p58 ul{ padding:30px 0 0 ;width:100%;  height:auto; overflow:hidden; }
+.group-03{ width:100%; float:none;text-align:center;font-size:2.5em; line-height:1.5em; padding:10px; }
+.projectnumber{ font-size:3em; color:#FFF;}
+.projectsmail{font-size:0.5em;line-height:26px; }
+.projectimg{float:none; width:100%; height:260px; margin:0 auto;  overflow:hidden;  }
+.projectimg img{ width:100%; box-shadow:3px 3px 12px #e3e1e4; }
+.moneyblue{ color:#228fff;font-size:3em;}
+.moneysmall{font-size:0.5em;}
+
+/*B*/
+
+.GBM-p108{  width:100%;  margin:20px auto;background-color:#e2d6d2;   box-shadow:3px 3px 12px #e3e1e4; }
+.GBM-p108 ul{ padding:30px 0 0 ;width:100%;  height:auto;  overflow:hidden; }
+/*收放*/
+.accordion{background:#F3F0EB; width:100%; margin:0 auto;}
+.accordion .set { margin-bottom: 5px;}
+
+.accordion .content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid rgba(227, 225, 228, 1);
+  display: none;
+}
+
+.accordion .content-B {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid rgba(226, 214, 210, 1);
+  display: none;
+}
+	/*---main-A Project----------------------------------------------------------*/
+.contentA-text{ font-size:2.5em;}
+
+.contentA-photo img {width:100%; }
+.contentA-main{ width:100%; height:auto;  text-align:center;  padding-top:20px; border: 0px solid #e3e1e4; background-color:#fff;box-shadow:none ;}
+
+
+
+
+
+.contentA-photo .contentA-font{
+  position:relative;
+ 
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 1); /* Black background with 0.5 opacity */
+}
+.contentA-font h5{ padding:5px 0;  font-size:24px; line-height:14px;}
+.Project-font{ padding:5px 0; line-height:24px;}
+
+
+
+.Project-trait{ width:90%;margin:0px auto; padding:0 10px 20px; }
+.Project-trait-icon{  width:25px; height:25px;vertical-align:middle; }
+.Project-trait li{ width:90%; padding: 0 0 5px 0;  text-align:none;   }
+
+
+/*專案內容*/
+.contentA-progect{ margin:20px auto; width:80%;height:auto;   } 
+
+.content-A-box{ float:none;max-width:90%;  height:auto; margin:0 auto;  padding: 10px 0;  }
+.Project-trait-icon2{ position:relative; top:5px;width:25px; height:25px;}
+/*基本裝修*/
+.basicdecoration{ width:100%; margin:40px auto; height:auto;}
+.A-box{ width:95%;height:auto; padding:10px; text-align:center; font-size:24px;   margin:0 auto; background-color:#e2d6d2;}
+.DC-group{  width:95%;margin:20px auto; }
+
+.DC-BOX{ float:none; width:100%; margin: 0 3px 10px ; padding:10px; border:1px solid rgba(227, 225, 228, 1); background:#FFF;box-shadow:3px 3px 12px #e3e1e4;}
+.DC-BOX img{ width:100%; height:auto;}
+.Afont-list{ margin-top:10px; width:100%; padding:5px; text-align:center;  }
+.A-detail{ line-height:26px; text-align:center;}
+.A-point{text-align:center; padding:5px;}
+.A-point img{ width:16px; height:21px; vertical-align:middle;}
+/*加值*/
+.box2{height:auto;}
+.box-color-2{background-color:#228fff;color:#FFF;}
+.DC-noborder{ padding:0px;}
+.DC-imgzoom { width:100%; height:auto;overflow:hidden;}
+.DC-imgzoom img{ transition: transform .2s; /* Animation */ }
+.DC-imgzoom img:hover {transform: scale(1.5);}
+.DC-img-text{ position:relative; margin-top:-46px; padding:10px; height:46px; background-color:rgba(0, 0, 0, 0.8); color:#FFF; font-size:24px; text-align:center; }
+.DC-img-font{ height:60px; padding-top:25px; text-align:center;}
+.DC-group-remake{ width:100%; padding:10px 10px 20px; margin:0 auto; line-height:24px; text-align:center;}
+/*其他*/
+.box3{height:auto;}
+.box-color-3{background-color:#F2F2F2; }
+.DOS-box3{  width:95%;height:auto;margin:20px auto; border:1px solid rgba(227, 225, 228, 1); background:#FFF;box-shadow:3px 3px 12px #e3e1e4;}
+
+.DOX-img{ float:none; width:100%; height:auto; overflow:hidden; margin-right:10px;}
+.DOX-img img{ width:100%; }
+.DOX-text{  padding:10px 10px 20px;  line-height:28px;}
+/*價格*/
+.box4{height: auto;}
+.final-money{width:600px;margin:20px auto; padding:0 20px; text-align:center; }
+.DM-text{ float:none; margin-top:30px; margin-right:0; text-align:center; }
+.DM-ptext{  margin-bottom:5px; font-size:1.2em; line-height:2em;}
+.DM-bigtext{margin-bottom:5px; font-size:2em;}
+.DM-momey{ width:240px; margin:0 auto;}
+.DM-button{  width:30%; margin:0 auto;}/*要改*/
+.DM-button-back{ width:62px; height:62px; margin:60px auto; } /*要改*/
+.final-money .moneyblue{ color:#228fff;font-size:6em;}
+.final-money .moneysmall{font-size:1.2em;}
+
+/*---main-A Project----------------------------------------------------------*/
+
+/*--------Content5----QA-------------*/
+
+.GBM-item5{ width:100%; height:auto; padding-bottom:20px; }
+.accordionQA{  width:95%; height:auto; }
+.QABG{ display:none;}
+
+/*--------Content5----QA-------------*/
+/*--Content6----住宅好準備------------------------*/
+.GBM-item6{ width:100%; height:auto; margin:0px auto;  }
+.GBM-item6 h2{ font-size:24px; atext-align:center;}
+.item6-group{ width:100%; margin:0 auto;}
+.item6-group ul{ float:none; width:100%; padding:20px; margin:0 auto; }
+.item6-text{ font-size:30px;  }
+
+
+/*==============FORM=====================*/
+#FORM{ clear:both; width:100%; height:auto; margin:0 auto;  ; padding:10px 0 20px 0;}
+
+/*--- footer-------------------------------------------------------------------------------*/
+
+.copyright{ padding:20px 0 10px; text-align:center; color:#666; font-size:16px; padding-bottom:80px;}
+
+/*--- footer-------------------------------------------------------------------------------*/
+
+
+/*================mobile footer*=========*/
+/*================mobile footer*=========*/
+.footer{display:block;width: 100%;height: 75px;background: #35322e;
+/*-webkit-gradient(linear, left top, left bottom, color-stop(0%,#555), color-stop(100%,#111));*/
+position: fixed;bottom: 0px;z-index:9050;
+/*box-shadow: 0px -1px 1px #333;*/}
+.footer ul{display:block;list-style: none;width: 100%;height: 80px;}
+.footer li{float: left;width: 22.55%; /*要被分開成 5 個*/height: 60px;padding-top:2px;}
+.footer li:first-child{border-left:none;}
+.footer li:last-child{border-right: none;}
+.footer li a{display:block;width:100%;height:80px;padding-top:45px; /*把文字往下推*/font-size:14px;
+	color:#FFF;text-align:center;text-decoration:none;background-repeat:no-repeat;
+	background-position:center 5px; /* X置中 Y向下5px*/letter-spacing:1px;
+	background-size:35px 35px; /* 把背景圖縮小一半 符合視網膜 2X 解析度*/}
+
+
+.footer li a.m_phone{ background-image:url(../images/phone.png);}
+.footer li a.m_form{ background-image:url(../images/form.png);}
+.footer li a.m_fb{ background-image:url(../images/fb.png);}
+.footer li a.m_line{ background-image:url(../images/line.png);}
+
+	
+ }
+ 
+ @media screen and (max-width:800px){
+ }
+
+ @media screen and (max-width:768px){
+ .modal-dots-inner { width:80%; height:auto;}/*藍點問題點*/
+ .bgimg-OC{ display:none;}
+ .bgimg-MOC{display:block;}
+ /*---dots--*/
+.bgcolorblock{ display:none; }
+.pointA{  margin-top:6%;margin-left:20%; } /*天花板--位置修改*/
+.pointB{  margin-top:90%;margin-left:30%; } /*地板--位置修改*/
+.pointC{  margin-top:30%;margin-left:47%; } /*牆--位置修改*/
+.pointD{  margin-top:25%;margin-left:80%; } /*櫥櫃--位置修改*/
+ /*pulse*/
+.pulse-button {width: 25px;/*原點尺寸*/ height:25px;}
+ 
+.item-title{margin:-68px auto; width:98.6%;}
+.final-money{width:100%;}
+.DM-button{  width:40%; margin:0 auto;} /*按鈕要置中*/
+.modal-inner {width:80%;} /*點選物件型號*/
+.goods-box{ float:left; width:180px; height:300px; padding:2px; } 
+ /* *************** */
+	.modal .close {height:1500px;/*RWD*/}
+ }
+  @media screen and (max-width:766px){
+ a.back-to-top {opacity: 0.5; display: none;width: 10px; padding:20px;height: 10px;text-indent: -9999px;position: fixed;z-index: 10000;right: 0px; bottom:80px;}
+
+.item-2-group li{ padding-bottom:20px; text-align:center;  }
+.item-2-group p{ text-align:justify;} 
+.modal .close {height:180%;/*RWD*/}
+.goods-box{ width:48%;height:220px; padding:2px; }
+.MB-hight-1{ height:600px;/*RWD*/}
+.MB-hight-2{ height:450px;}
+.MB-hight-3{ height:200px;}
+.item-2-group li img{margin-bottom:20px;}
+/*---Content4---專案流程--------------------------------------------------------*/
+#GBM-item4{ display:block; width:100%; height:1300px; margin:0 auto; }
+#GBM-item4 h2{ font-size:24px; text-align:center;}
+.contentA-main{ width:100%; margin:0 auto;}
+.item4-group{ width:100%; margin:0 auto;}
+.item4-group ul{ float:left; width:50%; height:400px; padding:25px; margin:0 auto; text-align:center;}
+.smailtext{ padding:5px; font-size:14px;}
+.item4-icon{ margin:0 auto;height: 135px; width: 135px;border-radius: 50%; background-color:#e2d6d2;box-shadow:3px 3px 12px #e3e1e4;}
+.item4-icon img{ position:relative; top:5px;width:120px; height:120px;margin: 0 auto;}
+.item4-text{ padding:5px; font-size:24px; }	  
+.item4-font{ text-align:justify;}
+	  }
+@media screen and (max-width:413px){
+.hamburger-menu {margin-left:80%;}
+.item-2-group li p{ font-size:14px; text-align:left; }
+.item-2-group li img{float:left; padding:5px; margin-top:20px;}
+.item-2-group{ width:100%; margin:20px auto; height:auto; padding-bottom:95px; text-align:left;}
+.DM-bigtext{margin-bottom:5px; font-size:1.6em;}
+.DM-ptext{  margin-bottom:5px; font-size:1.2em; line-height:1.4em;}
+.DM-button{  width:80%; margin:0 auto;}/*要改*/
+.projectnumber{ font-size:2em; color:#FFF;}
+.item6-but{ width:100%;}
+	
+	}
+	  
