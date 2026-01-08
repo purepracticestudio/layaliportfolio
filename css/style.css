@@ -308,7 +308,7 @@ background: url("../images/LAYA_PC.jpg"); background-size:cover;}
 .KV_pc .title{ position: relative; margin: 0 auto;   display:flex;
 align-items:center;
 justify-content:center;
-width:60%;
+width: 100%;
 height:100%;  }
 .KV_pc .title h1{font-weight: 700;font-size: 1.8em; color:  #fff;  letter-spacing: 0.5em; line-height: 1.5em; text-align: center; }
 @media screen and (max-width: 1920px) {
@@ -328,7 +328,7 @@ height:100%;  }
   .KV_pc{ max-width: 100%; height: 600px; 
     background: url("../images/laya_MKV.jpg");  background-size:cover; background-position: 30% top;}
     .KV_pc .title{
-      width:60%;
+      width:100%;
       height:150%; }
 }
 
@@ -458,7 +458,7 @@ height:100%;  }
   
     .works .photo{ position: relative; top:-200px; right: 0; width: 100%; height: 220px; overflow: hidden;}
     .photogratic{ background-position: right;}
-    .webweb{ background-position: -80px;}
+    .webweb{ background-position: -160px;}
   
   }
   

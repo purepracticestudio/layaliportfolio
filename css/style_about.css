@@ -75,6 +75,9 @@ p{ font-size:1em;
     line-height: 1.6em;
 }
 
+
+
+
 .blue{color: #638EB9}
 .point{ font-size: 24px;}
 h2{ font-size: 4em;  }
@@ -289,17 +292,17 @@ nav ul li ul li a {
 
 /*ABOUT--------------*/
 .aboutme{ width: 100%; height: 550px; margin: 70px auto; background: url(../images/about/IMG_90981.jpg) no-repeat; background-size: cover; background-position: bottom;}
-.nameitem{ display: inline-block; position: absolute; top:250px;  left: 90px; width: 500px; height: 400px;  } /*RWD修改*/
+.nameitem{ display: inline-block; position: absolute; top:250px;  left: 5%; width: 500px; height: 400px;  } /*RWD修改*/
 .nameitem h3{  margin-top: 20px ; font-size: 3em;}
 .nameitem h4{ margin-top: 10px; font-size: 1.5em;}
-.aword{  position: absolute; display: inline-block; width: 400px; top:500px; right: 0px; }
+.aword{  position: absolute; display: inline-block; width: 400px; top:500px; left: 5%; }
 .Chinese,.Eglish{ width: 60%; padding: 10px; background: #FFF; font-size: 1.2em;}
 .Eglish{ margin-top: 10px; width: 90%; font-size: 0.8em;}
 
 @media screen and (max-width: 1000px) {
 
-  .nameitem{ display:block; position: relative; padding: 10px; top:50px;  left: 0; width: 100%; height:auto;  } /*RWD修改*/
-  .aword{  position: relative; display: inline-block;  margin-left: 10px;  width: 400px; top:220px; right: 0px; }
+  .nameitem{ display:block; position: relative; padding: 10px; top:50px; width: 100%; height:auto;  } /*RWD修改*/
+  .aword{  position: relative; display: inline-block;  margin-left: 10px;  width: 400px; top:220px; }
   .Chinese,.Eglish{ width: 90%; padding: 10px; background: #FFF; font-size: 1.2em;}
   .Eglish{ margin-top: 10px; width: 90%; font-size: 0.8em;}
   }
@@ -307,7 +310,7 @@ nav ul li ul li a {
 
 @media screen and (max-width: 599px) {
 .aboutme{ width: 100%; height: 600px;  background-position:70% bottom;}
-.aword{  position: relative; display: inline-block;  margin-left: 10px;  width: 100%; top:370px; right: 0px; }
+.aword{  position: relative; display: inline-block;  margin-left: 10px;  width: 100%; top:370px; left: 0;   }
 .Chinese,.Eglish{ width: 90%; padding: 10px; background: #FFF; font-size: 1em;}
 .Eglish{ margin-top: 10px; width: 90%; font-size: 0.8em;}
 }
@@ -366,7 +369,7 @@ nav ul li ul li a {
 }
 
 .section{
-  padding: 22px;
+  padding: 120px;
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: var(--radius);
@@ -438,6 +441,7 @@ nav ul li ul li a {
 .xp__period{
   font-weight: 650;
   letter-spacing: .2px;
+  line-height: 1.5;
   color: var(--text);
   font-size: 14px;
 }
@@ -572,8 +576,15 @@ nav ul li ul li a {
 
 /* Responsive */
 @media (max-width: 720px){
+
+.section{
+  padding: 8px;
+}
+
+
   .xp{
     grid-template-columns: 1fr;
+    padding: 24px;
   }
   .xp::before{ display:none; }
   .xp__content{ padding-left: 0; }
