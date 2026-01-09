@@ -369,7 +369,7 @@ nav ul li ul li a {
 }
 
 .section{
-  padding: 120px;
+  padding: 40px 40px;
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: var(--radius);
